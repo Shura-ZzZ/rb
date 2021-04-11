@@ -1,6 +1,7 @@
 #include "Element.h"
 #include "Element.h"
 #include <cMath>
+#include "Typ.h"
 Element::Element()
 {
 }
@@ -13,6 +14,12 @@ double Element::getLenghtOfSide(Point a, Point b)
 {
 	return sqrt(pow(a.getX() - b.getX(), 2) +
 		pow(a.getY() - b.getY(), 2));
+}
+
+Typ Element::getTyp()
+{
+
+	return UNKNOW;
 }
 
 //bool Element::inside(const Line& p)

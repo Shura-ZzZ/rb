@@ -1,5 +1,6 @@
 #include "Circle.h"
 #include "Point.h"
+#include "Typ.h"
 Circle::Circle()
 {
 }
@@ -38,6 +39,11 @@ bool Circle::left(const Point& p)
 bool Circle::NearbyLine(const Point& p, double q)
 {
 	return PointToTop(p, q);
+}
+
+Typ Circle::getTyp()
+{
+	return CIRCLE;
 }
 
 bool Circle::PointToTop(const Point& p, double q)

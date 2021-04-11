@@ -2,6 +2,7 @@
 #include <cMath>
 #include "Point.h"
 #include "Rectangle.h"
+#include "Typ.h"
 //double Line::getLenghtOfSide(Point a, Point b)
 //{
 //	return sqrt(pow(a.getX() - b.getX(), 2) +
@@ -54,6 +55,10 @@ bool Line::PointToTop(const Point& p, double q)
 	if (getLenghtOfSide(p, point[0]) < q) return true;
 	if (getLenghtOfSide(p, point[1]) < q) return true;
 	return false;
+}
+Typ Line::getTyp()
+{
+	return LINE;
 }
 bool Line::NearbyLine(const Point& p, double q)
 {

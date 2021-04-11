@@ -1,7 +1,7 @@
 #include "Triangle.h"
 #include "Point.h"
 #include "Line.h"
-
+#include "Typ.h"
 #include <iostream>
 
 #include <cMath>
@@ -87,6 +87,11 @@ bool Triangle::NearbyLine(const Point& p, double q)
 
 	f = a.NearbyLine(p, q) || b.NearbyLine(p, q) || c.NearbyLine(p, q);
 	return f;
+}
+
+Typ Triangle::getTyp()
+{
+	return TRIANGLE;
 }
 
 

@@ -1,6 +1,7 @@
 #pragma once
 #include "Element.h"
 #include "Point.h"
+#include "Typ.h"
 class Line :
 	public Element
 {
@@ -16,7 +17,7 @@ public:
 	bool higher(const Point& p) override;
 	bool left(const Point& p) override;
 	bool PointToTop(const Point& p, double q) override;
-
+	Typ getTyp() override;
 	bool NearbyLine(const Point& p, double q) override;
 
 };

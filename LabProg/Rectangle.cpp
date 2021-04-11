@@ -1,4 +1,5 @@
 #include "Rectangle.h"
+#include "Typ.h"
 #define N 4
 #include "Triangle.h"
 #include <algorithm>
@@ -96,6 +97,11 @@ bool Rectangle::NearbyLine(const Point& p, double q)
 	Line d(point[3], point[0]);
 	f = a.NearbyLine(p, q) || b.NearbyLine(p, q) || c.NearbyLine(p, q) || d.NearbyLine(p, q);
 	return f;
+}
+
+Typ Rectangle::getTyp()
+{
+	return RECTANGLE;
 }
 
 

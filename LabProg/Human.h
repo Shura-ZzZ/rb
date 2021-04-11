@@ -12,6 +12,7 @@ class Human
 {
 public:
 	Human();
+	class HumanException {};
 	Human(vector<Element>& element);
 };
 

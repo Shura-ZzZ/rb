@@ -2,6 +2,7 @@
 #include "Element.h"
 #include "Point.h"
 #include "Line.h"
+#include "Typ.h"
 // точки должны идти по порядку
 class Rectangle :
 	public Element
@@ -22,6 +23,7 @@ public:
 	bool PointToTop(const Point& p, double q) override;
 	//Line diagonal();
 	bool NearbyLine(const Point& p, double q) override;
+	Typ getTyp() override;
 
 };
 

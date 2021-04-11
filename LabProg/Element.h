@@ -1,6 +1,6 @@
 #pragma once
 #include "Point.h"
-
+#include "Typ.h"
 class Element
 {
 
@@ -19,6 +19,8 @@ public:
 	virtual bool left(const Point& p) = 0;
 	virtual bool PointToTop(const Point& p, double q) = 0;
 	virtual bool NearbyLine(const Point& p, double q) = 0;
+	virtual Typ getTyp();
+	
 
 
 };

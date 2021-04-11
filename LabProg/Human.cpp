@@ -3,3 +3,7 @@
 Human::Human()
 {
 }
+
+Human::Human(vector<Element>& element)
+{
+}

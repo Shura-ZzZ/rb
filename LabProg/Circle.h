@@ -4,6 +4,7 @@
 #include "Line.h"
 #include "Triangle.h"
 #include "Rectangle.h"
+#include "Typ.h"
 class Circle :
 	public Element
 {
@@ -21,6 +22,7 @@ public:
 	bool left(const Point& p) override;
 	bool PointToTop(const Point& p, double q) override;
 	bool NearbyLine(const Point& p, double q) override;
+	Typ getTyp() override;
 	
 
 };
